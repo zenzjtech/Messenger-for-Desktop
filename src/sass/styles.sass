@@ -232,6 +232,10 @@ section#contact
 
 section#share
   padding-bottom: 160px
+  background: url(img/footer.png)
+  background-position: bottom center
+  background-repeat: no-repeat
+  background-size: 980px auto
 
   li.widget
     margin-bottom: 30px
@@ -242,10 +246,10 @@ section#share
       &:first-child
        margin-left: 15px
 
-  background: url(img/footer.png)
-  background-position: bottom center
-  background-repeat: no-repeat
-  background-size: 980px auto
+  .fb-like iframe
+    margin: 0
+    width: 300px
+    overflow: hidden
 
 footer
   background-color: #323940
@@ -273,7 +277,7 @@ footer
       float: right
 
 .clearfix:before, .clearfix:after
-    content: " "
+    content: ' '
     display: table
 
 .clearfix:after
