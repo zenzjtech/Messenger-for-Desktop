@@ -88,34 +88,34 @@ html
           li
             .tile
               a(href='https://www.messenger.com/features#texts')
-                img(src='img/tile_1.png')
+                img(src='img/tile_1.png' width='120' height='120')
                 p.description Know when people have seen your texts.
           li
             .tile
               a(href='https://www.messenger.com/features#hdcalls')
-                img(src='img/tile_2.png')
+                img(src='img/tile_2.png' width='120' height='120')
                 p.description Make HD calls anywhere in the world.
           li
             .tile
               a(href='https://www.messenger.com/features#photos')
-                img(src='img/tile_3.png')
+                img(src='img/tile_3.png' width='120' height='120')
                 p.description Snap photos and shoot videos.
 
         ul.container
           li
             .tile
               a(href='https://www.messenger.com/features#stickers')
-                img(src='img/tile_4.png')
+                img(src='img/tile_4.png' width='120' height='120')
                 p.description Choose from thousands of stickers.
           li
             .tile
               a(href='https://www.messenger.com/features#voicemessages')
-                img(src='img/tile_5.png')
+                img(src='img/tile_5.png' width='120' height='120')
                 p.description Record voice messages.
           li
             .tile
               a(href='https://www.messenger.com/features#groups')
-                img(src='img/tile_6.png')
+                img(src='img/tile_6.png' width='120' height='120')
                 p.description Chat with your favorite groups.
           
         a.button.bordered(href='https://www.messenger.com/') Explore on messenger.com
@@ -125,13 +125,13 @@ html
         h1.title Integrated with your OS
         ul.clearfix
           li
-            img(src='img/feature-1.jpg')
+            img(src='img/feature-1.jpg' width='230' height='200')
             h3.subtitle Launch on#[br]OS startup
           li
-            img(src='img/feature-2.jpg')
+            img(src='img/feature-2.jpg' width='230' height='200')
             h3.subtitle Native#[br]Notifications
           li
-            img(src='img/feature-3.jpg')
+            img(src='img/feature-3.jpg' width='230' height='200')
             h3.subtitle Custom#[br]Themes
       
     section#download
@@ -170,7 +170,7 @@ html
           li: a(href='http://www.producthunt.com/posts/messenger-for-desktop')
             include ../svg/producthunt.svg
           li: a(href='http://messenger-for-desktop.en.softonic.com')
-            img(src='img/softonic.png')
+            img(src='img/softonic.png' width='153' height='33')
     
     section#contribute
       .container
@@ -209,12 +209,6 @@ html
               data-text='Beautiful Facebook Messenger client for Mac, Windows & Linux by @Aluxian'
               data-related='Aluxian') Tweet
             
-            script.
-              !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)
-              ?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+
-              '://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);
-              }}(document, 'script', 'twitter-wjs');
-            
             a.github-button(
               href='https://github.com/Aluxian/Facebook-Messenger-Desktop'
               data-icon='octicon-star'
@@ -237,8 +231,17 @@ html
         
     // inject:js
     
+    //- Twitter
+    script.
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)
+      ?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+
+      '://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);
+      }}(document, 'script', 'twitter-wjs');
+    
+    //- GitHub
     script(async defer id='github-bjs' src='https://buttons.github.io/buttons.js')
     
+    //- Google Analytics
     script.
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
