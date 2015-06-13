@@ -22,6 +22,7 @@ html
     link(rel='icon', type='image/png', href='/favicon-16x16.png', sizes='16x16')
     link(rel='icon', type='image/png', href='/favicon-32x32.png', sizes='32x32')
       
+    meta(name='theme-color' content='#0084FF')
     meta(name='msapplication-TileColor', content='#ffffff')
     meta(name='msapplication-TileImage', content='/mstile-144x144.png')
       
@@ -43,10 +44,11 @@ html
     meta(name='twitter:card' content='summary_large_image')
     meta(name='twitter:creator' content='@aluxian')
     meta(name='twitter:image' content='http://messengerfordesktop.com/img/preview.jpg')
-    
+      
+    link(rel='canonical' href='http://messengerfordesktop.com')
     script.
       if (document.location.host == 'aluxian.github.io') {
-        document.location = 'http://messengerfordesktop.com/';
+        document.location = 'http://messengerfordesktop.com';
       }
       
     // inject:css
@@ -69,74 +71,74 @@ html
           include ../svg/logo.svg
           
         h1.title Messenger for Desktop
-        h3.subtitle A simple & beautiful app for Facebook Messenger.#[br]Chat without distractions on any OS.
+        p.subtitle A simple & beautiful app for Facebook Messenger.#[br]Chat without distractions on any OS.
         
         a.button.filled(href='#download' data-scroll) Download Now
         span.notice Not an official app. No affiliation with Facebook.
     
     section.blue#platforms
       .container
-        h1.title OS X, Windows & Linux
+        h2.title OS X, Windows & Linux
         
-      img.wide(src='img/platforms.jpg')
+      img.wide(src='img/platforms.jpg' alt='Platforms Preview')
         
     section#messenger-features
       .container
-        h1.title Texting and so much more
+        h2.title Texting and so much more
           
         ul.container
           li
             .tile
               a(href='https://www.messenger.com/features#texts')
-                img(src='img/tile_1.png' width='120' height='120')
+                img(src='img/tile_1.png' width='120' height='120' alt='Feature Preview')
                 p.description Know when people have seen your texts.
           li
             .tile
               a(href='https://www.messenger.com/features#hdcalls')
-                img(src='img/tile_2.png' width='120' height='120')
+                img(src='img/tile_2.png' width='120' height='120' alt='Feature Preview')
                 p.description Make HD calls anywhere in the world.
           li
             .tile
               a(href='https://www.messenger.com/features#photos')
-                img(src='img/tile_3.png' width='120' height='120')
+                img(src='img/tile_3.png' width='120' height='120' alt='Feature Preview')
                 p.description Snap photos and shoot videos.
 
         ul.container
           li
             .tile
               a(href='https://www.messenger.com/features#stickers')
-                img(src='img/tile_4.png' width='120' height='120')
+                img(src='img/tile_4.png' width='120' height='120' alt='Feature Preview')
                 p.description Choose from thousands of stickers.
           li
             .tile
               a(href='https://www.messenger.com/features#voicemessages')
-                img(src='img/tile_5.png' width='120' height='120')
+                img(src='img/tile_5.png' width='120' height='120' alt='Feature Preview')
                 p.description Record voice messages.
           li
             .tile
               a(href='https://www.messenger.com/features#groups')
-                img(src='img/tile_6.png' width='120' height='120')
+                img(src='img/tile_6.png' width='120' height='120' alt='Feature Preview')
                 p.description Chat with your favorite groups.
           
         a.button.bordered(href='https://www.messenger.com/' target='_blank') Explore on messenger.com
         
     section.blue#features
       .container
-        h1.title Integrated with your OS
+        h2.title Integrated with your OS
         ul.clearfix
           li
             img(src='img/feature-1.jpg' width='230' height='200')
-            h3.subtitle Launch on#[br]OS startup
+            span.subtitle Launch on#[br]OS startup
           li
             img(src='img/feature-2.jpg' width='230' height='200')
-            h3.subtitle Native#[br]Notifications
+            span.subtitle Native#[br]Notifications
           li
             img(src='img/feature-3.jpg' width='230' height='200')
-            h3.subtitle Custom#[br]Themes
+            span.subtitle Custom#[br]Themes
       
     section#download
       .container
-        h1.title Download
+        h2.title Download
         
       ul.container
         li: a.button.bordered(href='https://github.com/Aluxian/Facebook-Messenger-Desktop/releases/download/v1.4.0/Messenger.dmg')
@@ -162,19 +164,22 @@ html
     
     section.blue#featured
       .container
-        h1.title Featured on
+        h2.title Featured on
         
         ul
-          li: a(target='_blank' href='http://www.chip.de/downloads/Messenger-for-Desktop_78045560.html')
-            include ../svg/chip.svg
-          li: a(target='_blank' href='http://www.producthunt.com/posts/messenger-for-desktop')
-            include ../svg/producthunt.svg
-          li: a(target='_blank' href='http://messenger-for-desktop.en.softonic.com')
-            img(src='img/softonic.png' width='153' height='33')
+          li
+            a(target='_blank' href='http://www.chip.de/downloads/Messenger-for-Desktop_78045560.html' title='CHIP')
+              include ../svg/chip.svg
+          li
+            a(target='_blank' href='http://www.producthunt.com/posts/messenger-for-desktop' title='ProductHunt')
+              include ../svg/producthunt.svg
+          li
+            a(target='_blank' href='http://messenger-for-desktop.en.softonic.com' title='Softonic')
+              img(src='img/softonic.png' width='153' height='33' alt='Softonic')
     
     section#contribute
       .container
-        h1.title Contribute
+        h2.title Contribute
         
         ul
           li: a.button.bordered(href='https://github.com/Aluxian/Facebook-Messenger-Desktop') VIEW ON GITHUB
@@ -184,7 +189,7 @@ html
     
     section.blue#contact
       .container
-        h1.title Keep in touch
+        h2.title Keep in touch
         
         form(action='//aluxian.us7.list-manage.com/subscribe/post?u=88887250ab1b52820c884a673&amp;id=6e7c46127a' method='post' name='mc-embedded-subscribe-form' target='_blank')
           input.email(type='email' name='EMAIL' placeholder='you@awesome.com' required)
@@ -196,7 +201,7 @@ html
     
     section#share
       .container
-        h1.title Spread the love
+        h2.title Spread the love
         
         ul
           li.widget
@@ -221,9 +226,11 @@ html
               data-count-api='/repos/Aluxian/Facebook-Messenger-Desktop#stargazers_count'
               data-count-aria-label='# stargazers on GitHub'
               aria-label='Star Messenger for Desktop on GitHub') Star
-              
           li.widget
             .fb-send(data-href='http://messengerfordesktop.com/')
+            
+            a.gratipay(href='//gratipay.com/~Aluxian/' target='_blank')
+              img(src='//img.shields.io/gratipay/Aluxian.svg' alt='GratiPay')
     
     .footer-image
     
