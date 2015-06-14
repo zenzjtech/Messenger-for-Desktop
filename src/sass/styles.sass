@@ -133,7 +133,7 @@ section#features
       margin: 15px 0 0
       font-weight: 300
 
-    img
+    span.feature
       border-radius: 2px
       border: 3px solid white
       box-shadow: rgba(0, 0, 0, 0.2) 0 0 3px 1px
@@ -290,3 +290,45 @@ footer
 
 .clearfix:after
     clear: both
+
+=stitches($x: 0, $y: 0, $width: 0, $height: 0)
+  background-position: $x $y
+  width: $width
+  height: $height
+
+.tile-sprite
+  background-image: url(img/tiles.png)
+  background-repeat: no-repeat
+  display: inline-block
+
+  &.tile-sprite-1
+    +stitches(0, 0, 120px, 120px)
+
+  &.tile-sprite-2
+    +stitches(-120px, 0, 120px, 120px)
+
+  &.tile-sprite-3
+    +stitches(-240px, 0, 120px, 120px)
+
+  &.tile-sprite-4
+    +stitches(-360px, 0, 120px, 120px)
+
+  &.tile-sprite-5
+    +stitches(-480px, 0, 120px, 120px)
+
+  &.tile-sprite-6
+    +stitches(-600px, 0, 120px, 120px)
+
+.feature
+  background-image: url(img/features.png)
+  background-repeat: no-repeat
+  display: inline-block
+
+  &.feature-1
+    +stitches(0, 0, 230px, 200px)
+
+  &.feature-2
+    +stitches(-230px, 0, 230px, 200px)
+
+  &.feature-3
+    +stitches(-460px, 0, 230px, 200px)
