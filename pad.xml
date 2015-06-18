@@ -73,14 +73,20 @@
 			<Char_Desc_80>A simple &amp; beautiful desktop client for Facebook Messenger. Chat without distractions on any OS.</Char_Desc_80>
 			<Char_Desc_250>A simple &amp; beautiful desktop client for Facebook Messenger. Chat without distractions on any OS.</Char_Desc_250>
 			<Char_Desc_450>Messenger for Desktop is a simple &amp; beautiful desktop client for Facebook Messenger which runs on OS X, Windows and Linux.</Char_Desc_450>
-			<Char_Desc_2000>Messenger for Desktop is a simple &amp; beautiful desktop client for Facebook Messenger which runs on OS X, Windows and Linux. It was built with nw.js and it's basically web.whatsapp.com packaged inside a native app. Additional features: native notifications, badge, tray icon, launch on startup and themes. The app is open source and it's available on GitHub: https://github.com/Aluxian/Facebook-Messenger-Desktop</Char_Desc_2000>
+			<Char_Desc_2000>Messenger for Desktop is a simple &amp; beautiful desktop client for Facebook Messenger which runs on OS X, Windows and Linux.
+
+It was built with nw.js and it's basically messenger.com packaged inside a native app.
+
+Additional features: native notifications, badge, tray icon, launch on startup and themes.
+
+The app is open source and it's available on GitHub: https://github.com/Aluxian/Facebook-Messenger-Desktop</Char_Desc_2000>
 		</English>
 	</Program_Descriptions>
 	<Web_Info>
 		<Application_URLs>
 			<Application_Info_URL>http://messengerfordesktop.com/</Application_Info_URL>
 			<Application_Order_URL />
-			<Application_Screenshot_URL>http://messengerfordesktop.com/img/platforms.jpg</Application_Screenshot_URL>
+			<Application_Screenshot_URL>http://messengerfordesktop.com/img/preview.jpg</Application_Screenshot_URL>
 			<Application_Icon_URL>http://messengerfordesktop.com/favicon-192x192.png</Application_Icon_URL>
 			<Application_XML_File_URL>http://messengerfordesktop.com/pad.xml</Application_XML_File_URL>
 		</Application_URLs>
