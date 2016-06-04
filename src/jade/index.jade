@@ -141,23 +141,23 @@ html
         h2.title Download
         
       ul.container
-        li: a.button.bordered(href='https://github.com/Aluxian/Facebook-Messenger-Desktop/releases/download/v1.4.3/Messenger.dmg')
+        li: a.button.bordered(href='https://github.com/Aluxian/Facebook-Messenger-Desktop/releases/download/v1.4.3/Messenger.dmg' onclick="ga('send', 'event', {eventCategory: 'Download', eventAction: 'OSX', eventLabel: 'Messenger for OS X'})")
           span.osx
             include ../svg/apple.svg
             span OS X 10.7+
             
-        li: a.button.bordered(href='https://github.com/Aluxian/Facebook-Messenger-Desktop/releases/download/v1.4.3/MessengerSetup.exe')
+        li: a.button.bordered(href='https://github.com/Aluxian/Facebook-Messenger-Desktop/releases/download/v1.4.3/MessengerSetup.exe' onclick="ga('send', 'event', {eventCategory: 'Download', eventAction: 'Windows', eventLabel: 'Messenger for Windows'})")
           span
             include ../svg/windows.svg
             span Windows
         
       ul.container
-        li: a.button.bordered(href='https://github.com/Aluxian/Facebook-Messenger-Desktop/releases/download/v1.4.3/Messenger_linux32.deb')
+        li: a.button.bordered(href='https://github.com/Aluxian/Facebook-Messenger-Desktop/releases/download/v1.4.3/Messenger_linux32.deb' onclick="ga('send', 'event', {eventCategory: 'Download', eventAction: 'Linux32', eventLabel: 'Messenger for Linux 32'})")
           span
             include ../svg/debian.svg
             span Linux 32
         
-        li: a.button.bordered(href='https://github.com/Aluxian/Facebook-Messenger-Desktop/releases/download/v1.4.3/Messenger_linux64.deb')
+        li: a.button.bordered(href='https://github.com/Aluxian/Facebook-Messenger-Desktop/releases/download/v1.4.3/Messenger_linux64.deb' onclick="ga('send', 'event', {eventCategory: 'Download', eventAction: 'Linux64', eventLabel: 'Messenger for Linux 64'})")
           span
             include ../svg/debian.svg
             span Linux 64
