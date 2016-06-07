@@ -20,4 +20,7 @@
 
   linkOSX.setAttribute 'galabel', 'FileHorse'
   linkWin.setAttribute 'galabel', 'FileHorse'
+
+  linkOSX.setAttribute 'target', '_blank'
+  linkWin.setAttribute 'target', '_blank'
 )()
