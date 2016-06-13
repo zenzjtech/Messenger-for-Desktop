@@ -40,14 +40,11 @@ gulp.task 'sass', ['jade'], ->
     .pipe gulp.dest './temp'
 
 gulp.task 'coffee', ->
-  gulp.src ['./src/coffee/*.coffee']
+  gulp.src ['./src/bower_components/smooth-scroll/dist/js/smooth-scroll.js', './src/coffee/*.coffee']
     .pipe $.if /[.]coffee$/, $.coffee({ bare: true }).on('error', $.util.log)
-    .pipe gulp.dest './temp'
-  gulp.src ['./src/bower_components/smooth-scroll/dist/js/smooth-scroll.js', './temp/main.js']
     .pipe $.concat 'main.js'
     .pipe $.if live, $.uglify()
     .pipe gulp.dest './temp'
-
 
 gulp.task 'inject', ['sass', 'coffee'], ->
   gulp.src dist + '/index.html'
