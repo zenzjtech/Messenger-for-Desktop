@@ -4,7 +4,7 @@
   window.addthis_share =
     passthrough:
       twitter:
-        text: 'Beautiful Facebook Messenger client for Mac, Windows & Linux by @Aluxian'
+        text: 'Beautiful #Facebook #Messenger client for Mac, Windows & Linux by @Aluxian'
 
   # Anchor smooth scrolling
   smoothScroll.init()
