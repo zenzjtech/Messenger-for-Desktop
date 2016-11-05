@@ -1,0 +1,93 @@
+doctype html
+html
+  head
+    title Privacy Policy – Messenger for Desktop
+
+    include ./includes/meta_head.jade
+    include ./includes/favicons.jade
+
+    // inject:css
+
+  body
+
+    section.legal.legal-1#header
+      .container
+        a.logo(href='/')
+          img(src='img/logo.png' alt='Messenger for Desktop Logo')
+
+        h1.title Messenger for Desktop
+
+    section.legal.legal-2.inverted
+      h2.legal.title Privacy Policy
+
+    section.legal.legal-3
+      .container
+        .content
+
+          p Since your communication is a very personal matter, the safety of your data is very important to me. I strive to collect a minimal amount of data, with the sole purpose of improving the App.
+
+          ol
+            li
+              span.legal-title Definitions
+
+              p Messenger for Desktop is owned by Alexandru Rosianu (referred to as "I" or "Me"). As a customer of this Service you're a "User" or "You" according to this agreement. The App or any Services offered by me will be referred to as "Messenger for Desktop", "App" or "Service".
+
+              p This Privacy Policy is included in the #[a.link(href='/terms.html') Terms and Conditions].
+
+            li
+              span.legal-title Your Data &amp; Messages
+
+              p Messenger for Desktop is very close to a web browser and does not need direct access to Facebook's APIs. Messenger for Desktop is just a wrapper for the official web app #[a.link(href='https://messenger.com/') messenger.com], which means that Messenger for Desktop does not handle your data directly. Messenger for Desktop can store data in two ways: on your computer and remotely on my server(s).
+
+              p Messenger for Desktop is open-source, so most parts of the App are public: the source code, the build process, the packaging scripts. You may obtain a copy of the source code and create your own clone of Messenger for Desktop, with the ability to have complete control over you data (within the limits of what messenger.com allows). The source code is MIT licensed.
+
+              ol
+                li
+                  span.legal-title Data stored on your computer
+
+                  p This data includes your App preferences, cookies, browser cache and other data that #[a.link(href='https://www.chromium.org/') Chromium], #[a.link(href='http://electron.atom.io/') Electron] or messenger.com might need to store on your computer. This is exactly as it is when using a regular web browser like Safari, Chrome or FireFox.
+
+                  p Messenger for Desktop does not directly handle, access, store, or otherwise use your Facebook credentials, messages or any other data connected to your Facebook account. This happens indirectly, i.e. by the messenger.com instance that runs inside Messenger for Desktop.
+
+                li
+                  span.legal-title Data stored remotely on my server(s)
+
+                  p I do not store your account's details, login credentials, messages or any other data remotely on my server(s). This data is stored and handled solely by Facebook through messenger.com.
+
+                  p However, I do collect a minimal amount of data with the purpose of improving Messenger for Desktop. See sections #[i 2.3. Statistics] and #[i 2.4. Crash Reports].
+
+                li
+                  span.legal-title Statistics
+
+                  p I do not track the way you interact with Facebook or your Facebook contacts.
+
+                  p For the purpose of understanding my Users, I anonymously collect data which includes but is not limited to: IP address, Operating System type and version, screen resolution, locale, language, App version. I do not collect any personally identifiable data such as your name or your contacts' names. The data I collect is aggregated.
+
+                li
+                  span.legal-title Crash Reports
+
+                  p When Messenger for Desktop crashes, an error happens or something goes wrong internally, Messenger for Desktop reports these crashes to my server(s). These crash reports include data such as (but not only): information about the crash, your Operating System type, App version.
+
+                li
+                  span.legal-title Opting Out
+
+                  p If you do not wish that I remotely collect data (i.e. statistics and crash reports), you are free to disable this feature from the App menu.
+
+            li
+              span.legal-title Changes
+
+              p You can object to any changes by deleting the App within 21 days. Otherwise you agree to those changes.
+
+            li
+              span.legal-title Questions
+
+              p If you have any questions or comments, feel free to write an email to #[a.link(href='mailto:me@aluxian.com') me@aluxian.com].
+
+          i.last-updated-at The last update to this Privacy Policy was posted on May 6, 2016.
+
+    footer
+      .container
+        p.left No affiliation with Facebook. #[a(href='/terms.html') Terms and Conditions]. #[a(href='/privacy.html') Privacy Policy].
+        p.right Coded with &hearts; by #[a(href='http://www.aluxian.com/') Alexandru Rosianu]
+
+    include ./includes/ga.jade
