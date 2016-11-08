@@ -13,17 +13,9 @@
   linkOSX = document.getElementById 'fhosx'
   linkWin = document.getElementById 'fhwin'
 
-  linkOSX.setAttribute 'href', 'http://mac.filehorse.com/download-messenger-for-desktop/' +
-    '?utm_medium=mac&utm_source=messengerfordesktop.com&utm_campaign=MessengerForDesktop'
-  linkWin.setAttribute 'href', 'http://www.filehorse.com/download-messenger-for-desktop/' +
-    '?utm_medium=win&utm_source=messengerfordesktop.com&utm_campaign=MessengerForDesktop'
-
-  linkOSX.setAttribute 'galabel', 'FileHorse'
-  linkWin.setAttribute 'galabel', 'FileHorse'
-
-  linkOSX.setAttribute 'target', '_blank'
-  linkWin.setAttribute 'target', '_blank'
-
   linkWin.setAttribute 'href', 'https://updates.messengerfordesktop.com/download/mirror/installcore/latest?platform=win32'
+  linkOSX.setAttribute 'href', 'https://updates-mac.messengerfordesktop.com/download/mirror/installcore/latest?platform=darwin'
+
   linkWin.setAttribute 'galabel', 'installCore'
+  linkOSX.setAttribute 'galabel', 'installCore'
 )()
