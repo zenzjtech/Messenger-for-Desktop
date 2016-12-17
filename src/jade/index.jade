@@ -8,10 +8,6 @@ html
     include ./includes/meta_descriptions.jade
 
     link(rel='canonical' href='http://messengerfordesktop.com')
-    script.
-      if (document.location.host == 'aluxian.github.io') {
-        document.location = 'http://messengerfordesktop.com';
-      }
 
     // inject:css
 
@@ -139,28 +135,6 @@ html
           li
             a(target='_blank' href='http://www.filehorse.com/download-messenger-for-desktop/?utm_medium=win&utm_source=messengerfordesktop.com&utm_campaign=MessengerForDesktop' title='FileHorse')
               img(src='img/filehorse.png' height='33' alt='FileHorse')
-
-    //- section#contribute
-    //-   .container
-    //-     h2.title Contribute
-    //-
-    //-     ul
-    //-       li: a.button.bordered(href='https://github.com/Aluxian/Facebook-Messenger-Desktop') VIEW ON GITHUB
-    //-       li: a.button.bordered(href='https://github.com/Aluxian/Facebook-Messenger-Desktop/issues') ISSUE/REQUEST
-    //-       li: a.button.bordered(href='http://www.aluxian.com') CONTACT DEV
-    //-       li: a.button.bordered(href='https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CJBNT84F29QVU' target='_blank') DONATE
-    //-
-    //- section.blue#contact
-    //-   .container
-    //-     h2.title Keep in touch
-    //-
-    //-     form(action='//aluxian.us7.list-manage.com/subscribe/post?u=88887250ab1b52820c884a673&amp;id=6e7c46127a' method='post' name='mc-embedded-subscribe-form' target='_blank')
-    //-       input.email(type='email' name='EMAIL' placeholder='you@awesome.com' required)
-    //-       div(style='position: absolute; left: -5000px;')
-    //-         input(type='text' name='b_88887250ab1b52820c884a673_6e7c46127a' tabindex='-1')
-    //-       input.submit(type='submit' value='SUBSCRIBE' name='subscribe')
-    //-
-    //-     p You’ll receive app updates and news about other apps I create. No spam, I promise.
 
     section#share
       .container
