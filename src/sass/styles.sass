@@ -1,7 +1,7 @@
 @import ../bower_components/bourbon/dist/bourbon
 @import ../bower_components/neat/app/assets/stylesheets/neat
 
-$blue: #0084FF
+$blue: #0069CC
 $font-thin: 'HelveticaNeue-Thin', 'Helvetica Neue Light', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, 'Lucida Grande', sans-serif
 $font-normal: 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, 'Lucida Grande', sans-serif
 $mobile: new-breakpoint(max-width 779px)
@@ -133,11 +133,6 @@ section#features
       margin: 15px 0 0
       font-weight: 300
 
-    span.feature
-      border-radius: 2px
-      border: 3px solid white
-      box-shadow: rgba(0, 0, 0, 0.2) 0 0 3px 1px
-
 section#download
   .subtitle
     font-weight: inherit
@@ -151,11 +146,20 @@ section#download
   .osx svg
     bottom: -1px
 
+  .titlecontainer h2
+    margin-bottom: 20px
+
   ul.container
     max-width: 500px
   li
     @include span-columns(6)
     padding: 0 5px 20px
+
+  .notice
+    color: rgba(0, 0, 0, 0.6)
+    display: block
+    font-size: 12px
+    margin-bottom: 30px
 
   a
     width: 100%
@@ -247,11 +251,16 @@ section#contact
       border-bottom-right-radius: 2px
 
 section#share
-  padding-bottom: 160px
-  background: url(img/footer.png)
   background-position: bottom center
   background-repeat: no-repeat
   background-size: 980px auto
+
+  .container
+    max-width: 600px
+
+  .button
+    margin-bottom: 0
+    margin-top: 30px
 
   li.widget
     margin-bottom: 30px
@@ -277,28 +286,13 @@ section#share
 
 footer
   background-color: #323940
+  text-align: center
+  padding: 10px 0
 
   p
+    text-align: center
     font-size: 14px
     color: rgba(255, 255, 255, 0.4)
-
-  @include media($mobile)
-    text-align: center
-    padding: 16px 0
-
-    p
-      margin: 0
-      line-height: 24px
-
-  @include media($desktop)
-    p
-      line-height: 30px
-
-    .left
-      float: left
-
-    .right
-      float: right
 
 .clearfix:before, .clearfix:after
     content: ' '

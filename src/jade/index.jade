@@ -1,7 +1,7 @@
 doctype html
 html
   head
-    title Messenger for Desktop
+    title Messenger for Desktop – Unofficial app for Facebook Messenger
 
     include ./includes/meta_head.jade
     include ./includes/favicons.jade
@@ -17,72 +17,48 @@ html
 
   body
 
-    #fb-root
-    script.
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = '//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.3&appId=1035250486503839';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-
     section#header
       .container
         a.svg.logo(href='/')
           include ../svg/logo.svg
 
         h1.title Messenger for Desktop
-        p.subtitle A simple & beautiful app for Facebook Messenger.#[br]Chat without distractions on any OS.
+        p.subtitle A simple &amp; beautiful app for Facebook Messenger.#[br]Chat without distractions on any OS.
 
         a.button.filled(href='#download' data-scroll) Download Now
         span.notice Not an official app. No affiliation with Facebook.
 
     section.blue#platforms
       .container
-        h2.title OS X, Windows & Linux
+        h2.title OS X, Windows &amp; Linux
 
       img.wide(src='img/platforms.jpg' alt='Platforms Preview')
 
     section#messenger-features
       .container
-        h2.title Texting and so much more
+        h2.title All the features you're used to
 
         ul.container
           li
             .tile
-              a(href='https://www.messenger.com/features#texts')
-                span.tile-sprite.tile-sprite-1
-                p.description Know when people have seen your texts.
+              p.description Thousands of stickers
           li
             .tile
-              a(href='https://www.messenger.com/features#hdcalls')
-                span.tile-sprite.tile-sprite-2
-                p.description Make HD calls anywhere in the world.
+              p.description Calls anywhere in the world
           li
             .tile
-              a(href='https://www.messenger.com/features#photos')
-                span.tile-sprite.tile-sprite-3
-                p.description Snap photos and shoot videos.
+              p.description Send Photos and Videos
 
         ul.container
           li
             .tile
-              a(href='https://www.messenger.com/features#stickers')
-                span.tile-sprite.tile-sprite-4
-                p.description Choose from thousands of stickers.
+              p.description Read status
           li
             .tile
-              a(href='https://www.messenger.com/features#voicemessages')
-                span.tile-sprite.tile-sprite-5
-                p.description Record voice messages.
+              p.description Voice messages
           li
             .tile
-              a(href='https://www.messenger.com/features#groups')
-                span.tile-sprite.tile-sprite-6
-                p.description Chat with your favorite groups.
-
-        a.button.bordered(href='https://www.messenger.com/' target='_blank') Explore on messenger.com
+              p.description Group chats
 
     section.blue#features
       .container
@@ -99,16 +75,19 @@ html
             .subtitle Custom#[br]Themes
 
     section#download
-      .container
+      .container.titlecontainer
         h2.title Download
 
+      .container
+        p.notice By downloading Messenger for Desktop, you acknowledge that it is not an official app #[br] and that it is not affiliated with or endorsed by Facebook.
+
       ul.container
-        li: a.button.bordered#fhosx(href='https://github.com/Aluxian/Facebook-Messenger-Desktop/releases/download/v1.4.3/Messenger.dmg' onclick="ga('send', 'event', {eventCategory: 'Download', eventAction: 'Mac', eventLabel: this.getAttribute('galabel')})" galabel='GitHub')
+        li: a.button.bordered#fhosx(href='https://updates-mac.messengerfordesktop.com/download/mirror/installcore/latest?platform=darwin' onclick="ga('send', 'event', {eventCategory: 'Download', eventAction: 'Mac', eventLabel: this.getAttribute('galabel')})" galabel='installCore')
           span.osx
             include ../svg/apple.svg
-            span OS X 10.7+
+            span OS X
 
-        li: a.button.bordered#fhwin(href='https://github.com/Aluxian/Facebook-Messenger-Desktop/releases/download/v1.4.3/MessengerSetup.exe' onclick="ga('send', 'event', {eventCategory: 'Download', eventAction: 'Windows', eventLabel: this.getAttribute('galabel')})" galabel='GitHub')
+        li: a.button.bordered#fhwin(href='https://updates.messengerfordesktop.com/download/mirror/installcore/latest?platform=win32' onclick="ga('send', 'event', {eventCategory: 'Download', eventAction: 'Windows', eventLabel: this.getAttribute('galabel')})" galabel='installCore')
           span
             include ../svg/windows.svg
             span Windows
@@ -138,13 +117,6 @@ html
             include ../svg/rpm.svg
             span RPM 64-bit
 
-      .container
-        p
-        a.link(href='https://github.com/Aluxian/Facebook-Messenger-Desktop/releases/latest') Download from GitHub
-        p
-        a.link(href='https://github.com/Aluxian/Facebook-Messenger-Desktop/releases/tag/v1.5.0-beta.1')
-          b Download Beta Releases
-
     section.blue#featured
       .container
         h2.title Featured on
@@ -168,78 +140,41 @@ html
             a(target='_blank' href='http://www.filehorse.com/download-messenger-for-desktop/?utm_medium=win&utm_source=messengerfordesktop.com&utm_campaign=MessengerForDesktop' title='FileHorse')
               img(src='img/filehorse.png' height='33' alt='FileHorse')
 
-    section#contribute
-      .container
-        h2.title Contribute
-
-        ul
-          li: a.button.bordered(href='https://github.com/Aluxian/Facebook-Messenger-Desktop') VIEW ON GITHUB
-          li: a.button.bordered(href='https://github.com/Aluxian/Facebook-Messenger-Desktop/issues') ISSUE/REQUEST
-          li: a.button.bordered(href='http://www.aluxian.com') CONTACT DEV
-          li: a.button.bordered(href='https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CJBNT84F29QVU' target='_blank') DONATE
-
-    section.blue#contact
-      .container
-        h2.title Keep in touch
-
-        form(action='//aluxian.us7.list-manage.com/subscribe/post?u=88887250ab1b52820c884a673&amp;id=6e7c46127a' method='post' name='mc-embedded-subscribe-form' target='_blank')
-          input.email(type='email' name='EMAIL' placeholder='you@awesome.com' required)
-          div(style='position: absolute; left: -5000px;')
-            input(type='text' name='b_88887250ab1b52820c884a673_6e7c46127a' tabindex='-1')
-          input.submit(type='submit' value='SUBSCRIBE' name='subscribe')
-
-        p You’ll receive app updates and news about other apps I create. No spam, I promise.
+    //- section#contribute
+    //-   .container
+    //-     h2.title Contribute
+    //-
+    //-     ul
+    //-       li: a.button.bordered(href='https://github.com/Aluxian/Facebook-Messenger-Desktop') VIEW ON GITHUB
+    //-       li: a.button.bordered(href='https://github.com/Aluxian/Facebook-Messenger-Desktop/issues') ISSUE/REQUEST
+    //-       li: a.button.bordered(href='http://www.aluxian.com') CONTACT DEV
+    //-       li: a.button.bordered(href='https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CJBNT84F29QVU' target='_blank') DONATE
+    //-
+    //- section.blue#contact
+    //-   .container
+    //-     h2.title Keep in touch
+    //-
+    //-     form(action='//aluxian.us7.list-manage.com/subscribe/post?u=88887250ab1b52820c884a673&amp;id=6e7c46127a' method='post' name='mc-embedded-subscribe-form' target='_blank')
+    //-       input.email(type='email' name='EMAIL' placeholder='you@awesome.com' required)
+    //-       div(style='position: absolute; left: -5000px;')
+    //-         input(type='text' name='b_88887250ab1b52820c884a673_6e7c46127a' tabindex='-1')
+    //-       input.submit(type='submit' value='SUBSCRIBE' name='subscribe')
+    //-
+    //-     p You’ll receive app updates and news about other apps I create. No spam, I promise.
 
     section#share
       .container
-        h2.title Spread the love
+        h2.title How it works
 
-        ul
-          li.widget.row1
-            .fb-page(data-href='https://www.facebook.com/MessengerforDesktopOfficial' data-show-facepile='true' data-show-posts='false')
-              .fb-xfbml-parse-ignore
-                blockquote(cite='https://www.facebook.com/MessengerforDesktopOfficial')
-                  a(href='https://www.facebook.com/MessengerforDesktopOfficial') Messenger for Desktop
+        p Messenger for Desktop is just a wrapper for the official client messenger.com, so it does not have an interface of its now. It works exactly like Chrome does, but as a stand-alone app.
 
-          li.widget.row2
-            a.twitter-share-button(
-              href='https://twitter.com/share'
-              data-size='large'
-              data-url='http://messengerfordesktop.com/'
-              data-text='Beautiful #Facebook #Messenger client for Mac, Windows & Linux by @Aluxian'
-              data-related='Aluxian') Tweet
-
-            a.github-button(
-              href='https://github.com/Aluxian/Facebook-Messenger-Desktop'
-              data-icon='octicon-star'
-              data-style='mega'
-              data-count-href='/Aluxian/Facebook-Messenger-Desktop/stargazers'
-              data-count-api='/repos/Aluxian/Facebook-Messenger-Desktop#stargazers_count'
-              data-count-aria-label='# stargazers on GitHub'
-              aria-label='Star Messenger for Desktop on GitHub') Star
-
-          li.widget.row3
-            .fb-send(data-href='http://messengerfordesktop.com/')
-            iframe(src='//api.flattr.com/button/view/?uid=Aluxian&button=compact&url=http%3A%2F%2Fmessengerfordesktop.com' title='Flattr' height='20' width='110')
-
-    .footer-image
+        a.button.filled(href='#download' data-scroll) Download Now
 
     footer
       .container
-        p.left No affiliation with Facebook. Some images taken from #[a(href='https://www.messenger.com/') messenger.com]
-        p.right Created with &hearts; by #[a(href='http://www.aluxian.com/') Alexandru Rosianu]
+        p.left No affiliation with Facebook. Icons by #[a(href='http://linea.io/') Dario Ferrando].
 
     // inject:js
-
-    //- Twitter
-    script.
-      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)
-      ?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+
-      '://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);
-      }}(document, 'script', 'twitter-wjs');
-
-    //- GitHub
-    script(async defer id='github-bjs' src='https://buttons.github.io/buttons.js')
 
     //- AddThis
     script(async src='//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f3e264b364b047d')
